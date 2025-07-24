@@ -22,7 +22,7 @@ def main():
         except ValueError:
             print("One through ten.")
             continue
-                
+        attempts += 1
         
         
         if guess != snumber:
@@ -34,9 +34,8 @@ def main():
             print("You got it! Great job.")
             return
 
-        if attempts == 3:
-            print(f"Unlucky. The number was {snumber}")
-            break
+        
+    print(f"Unlucky. The number was {snumber}")
 
         
     
